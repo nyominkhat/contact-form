@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shadow-color: 234deg 16% 33%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3fb;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px 12px 36px 24px;
+  width: 400px;
+  /* height: 600px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.34),
+    0.3px 0.7px 0.9px -1.2px hsl(var(--shadow-color) / 0.34),
+    0.8px 1.8px 2.2px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+.container:hover {
+  box-shadow: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.36),
+    0.7px 1.5px 1.9px -0.8px hsl(var(--shadow-color) / 0.36),
+    1.6px 3.6px 4.4px -1.7px hsl(var(--shadow-color) / 0.36),
+    4px 8.8px 10.9px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+span {
+  margin-bottom: 16px;
+  text-align: right;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+input {
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 12px 0px;
+  border-width: 0px 0px 1px 0px;
+  outline: none;
+}
+
+select {
+  width: 240px;
+  margin: 0 auto;
+  padding: 8px 0px;
+  border-width: 0px 0px 1px 0px;
+  outline: none;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #b4b1bc;
+  resize: none;
+  outline: none;
+}
+
+button {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #171736;
+  border: none;
+  border-radius: 18px;
+}
+
+button:hover {
+  background-color: #00003b;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #171736;
+}
